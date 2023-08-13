@@ -1,6 +1,6 @@
 .cursor {
   position: fixed;
-  display: none;
+  display: none !important;
   width: 10px;
   height: 10px;
   border-radius: 50%;
