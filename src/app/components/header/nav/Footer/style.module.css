@@ -1,0 +1,10 @@
+.footerContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.title {
+  color: #9f9689;
+  margin-right: .4rem;
+}

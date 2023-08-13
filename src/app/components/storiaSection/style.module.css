@@ -1,0 +1,273 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+
+
+
+.storiaTitle {
+  padding-bottom: 4rem;
+  max-width: 700px;
+}
+
+.storiaTitle h1 {
+  font-size: 2.7rem;
+  font-size: clamp(1.15rem, 6vw, 2.7rem);
+  font-weight: 400;
+  display: flex;
+  gap: .4rem;
+
+}
+
+.mask {
+  overflow: hidden;
+}
+
+.storiaTitle h1 span {
+  display: block;
+}
+
+.storiaTitle h1:last-child {
+  justify-content: flex-end;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.imgTop {
+  width: 100%;
+  height: 475px;
+  position: relative;
+  top: -4rem;
+}
+
+.imgTop img {
+  object-fit: cover;
+}
+
+.wrapperStoriaText {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapperStoriaText h2 {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.wrapperStoriaText p {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+
+}
+
+.wrapperBottom {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  padding-top: 3.5rem;
+  position: relative;
+  align-items: end;
+}
+
+.wrapperBottom::before,
+.wrapperBottom::after {
+  content: '';
+  height: 1px;
+  width: 40%;
+  position: absolute;
+  background-color: #A68768;
+
+}
+
+.wrapperBottom::before {
+  left: 0;
+  top: 0;
+}
+
+.wrapperBottom::after {
+  right: 0;
+  top: 0;
+}
+
+.containerImages {
+  position: relative;
+}
+
+.firstImg {
+  height: 200px;
+  width: 170px;
+  position: relative;
+  top: -3rem;
+
+}
+
+.firstImg img {
+  object-fit: cover;
+  object-position: top;
+}
+
+.storiaPh {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.storiaPh h2 {
+  font-weight: 600;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+.secondImg {
+  height: 125px;
+  width: 170px;
+  position: absolute;
+  top: -45%;
+  left: -60%;
+
+}
+
+.secondImg img {
+  object-fit: cover;
+
+}
+
+@media only screen and (min-width: 350px) {
+
+  .firstImg {
+    height: 250px;
+    width: 200px;
+  }
+
+  .secondImg {
+    height: 150px;
+    width: 190px;
+    left: -70%;
+    top: -35%;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .storiaTitle h1 {
+    gap: .7rem;
+  }
+
+  .firstImg {
+    height: 250px;
+    width: 225px;
+
+  }
+
+  .secondImg {
+    height: 150px;
+    width: 225px;
+
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .firstImg {
+    height: 300px;
+    width: 275px;
+
+  }
+
+  .secondImg {
+    height: 200px;
+    width: 300px;
+
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapperBottom {
+    flex-direction: row;
+    align-items: normal;
+  }
+
+  .storiaPh {
+    width: auto;
+  }
+
+  .firstImg {
+    height: 350px;
+    width: 300px;
+
+  }
+
+  .secondImg {
+    height: 225px;
+    width: 350px;
+    left: -90%;
+  }
+}
+
+@media only screen and (min-width: 635px) {
+  .imgTop {
+    width: 600px;
+    height: 550px;
+  }
+
+  .wrapperBottom {
+    gap: 5rem;
+  }
+}
+
+@media only screen and (min-width: 790px) {
+  .firstImg {
+    height: 450px;
+    width: 400px;
+  }
+
+  .secondImg {
+    height: 275px;
+    width: 450px;
+    top: -24%;
+    left: -90%;
+  }
+}
+
+@media only screen and (min-width: 875px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .imgTop {
+    width: 500px;
+    height: 450px;
+  }
+
+  .storiaPh h2 {
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .wrapper {
+    gap: 5rem;
+  }
+
+  .imgTop {
+    width: 600px;
+    height: 550px;
+  }
+
+  .firstImg {
+    height: 550px;
+    width: 500px;
+
+  }
+
+  .secondImg {
+    height: 375px;
+    width: 550px;
+  }
+}

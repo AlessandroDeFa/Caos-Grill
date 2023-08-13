@@ -1,0 +1,53 @@
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.backgroundImg {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  background-position: bottom;
+  z-index: -1;
+  transform: translate(0%, 0%);
+}
+
+.heroText {
+  color: #F3F0EA;
+  max-width: 1000px;
+}
+
+.heroText h1 {
+  font-size: clamp(2rem, 10vw, 6rem);
+  font-weight: 500;
+  text-align: center;
+  line-height: clamp(2.2rem, 10vw, 5.5rem);
+  margin-bottom: 1rem;
+
+}
+
+.heroText p {
+  font-size: 1.3rem;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  font-weight: 500;
+  text-align: center;
+  color: #BCAE86;
+}
+
+
+.backgroundImg:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  display: block;
+
+}

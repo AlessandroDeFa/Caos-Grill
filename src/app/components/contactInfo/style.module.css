@@ -1,0 +1,143 @@
+.container {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 4rem 1rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.singleInfo {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.singleInfo:first-child {
+  margin-top: 4rem;
+}
+
+.singleInfo::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #BCAE86;
+  width: 2rem;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.singleInfo h3 {
+  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.singleInfo p {
+  color: #1c1d20;
+  opacity: .7;
+  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.singleInfo span {
+  font-weight: 600;
+}
+
+.imgContact {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  top: -2rem;
+}
+
+.flex {
+  flex: 1;
+}
+
+.wrapperBottomText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperBottomText h2 {
+  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.imgContact2 {
+  height: 320px;
+  width: 100%;
+  position: relative;
+  top: -5rem;
+}
+
+.imgContact img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.imgContact2 img {
+  object-fit: cover;
+  object-position: right;
+}
+
+@media only screen and (min-width: 355px) {
+  .imgContact2 {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    flex-direction: row;
+    padding: 0 0 4rem 1rem;
+    gap: 0;
+  }
+
+  .imgContact {
+    width: 55%;
+  }
+
+  .wrapperBottomText {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .imgContact {
+    width: 550px;
+  }
+
+  .wrapperBottomText {
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .imgContact {
+    height: 650px;
+    width: 650px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .imgContact {
+    height: 750px;
+    width: 750px;
+  }
+
+  .wrapperBottomText {
+    margin-left: 10rem;
+  }
+}

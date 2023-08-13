@@ -1,0 +1,118 @@
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.backgroundImg {
+  height: 100%;
+  background-size: cover;
+  background-image: url(/images/img-caosgrill.jpeg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  background-position: bottom;
+  z-index: -1;
+  transform: translate(0%, 0%);
+}
+
+.heroText {
+  color: #F3F0EA;
+  max-width: 1000px;
+}
+
+.heroText h1 {
+  font-size: clamp(2.5rem, 10vw, 6rem);
+  font-weight: 500;
+  text-align: center;
+  line-height: clamp(2.2rem, 10vw, 5.5rem);
+  margin-bottom: 1rem;
+}
+
+.heroText h2 {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.backgroundImg:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  display: block;
+
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.22rem;
+  height: 3.5rem;
+  border-radius: 3rem;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 1);
+}
+
+.scrollIndicator::after {
+  content: '';
+  position: absolute;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: #ddaa44;
+  border-radius: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: scrollIndicator 2.5s linear infinite;
+}
+
+@keyframes scrollIndicator {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -300%);
+    height: .25rem;
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -25%);
+    height: .9rem;
+  }
+
+  40% {
+    opacity: 0;
+    transform: translate(-50%, 150%);
+    height: .25rem;
+  }
+
+  60% {
+    opacity: 0;
+    transform: translate(-50%, -300%);
+    height: .25rem;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -300%);
+    height: .25rem;
+  }
+
+}
+
+.scrollText {
+  position: absolute;
+  bottom: 1rem;
+  color: #ffff;
+  font-size: 0.8rem;
+  font-weight: 300;
+  left: 50%;
+  transform: translateX(-50%);
+}

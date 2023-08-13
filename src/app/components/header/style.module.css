@@ -1,0 +1,99 @@
+.headerContainer {
+  background-color: #F3F0EA;
+  padding: 0.3rem 1rem 0 1rem;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.header {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.logolabel {
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: grid;
+  place-content: center left;
+}
+
+.triggerwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.triggerwrapper p {
+  font-size: 0.9rem;
+}
+
+.triggerwrapper p:nth-of-type(2) {
+  position: absolute;
+  opacity: 0;
+}
+
+.menulabel {
+  display: flex;
+}
+
+.triggermenu {
+  width: 22.5px;
+  position: relative;
+}
+
+.triggermenu::after,
+.triggermenu::before {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  display: block;
+  transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
+
+}
+
+.triggermenu::after {
+  top: -4px;
+}
+
+.triggermenu::before {
+  top: 4px;
+}
+
+.triggerActive::before {
+  transform: rotate(-45deg);
+  top: .5px;
+}
+
+.triggerActive::after {
+  transform: rotate(45deg);
+  top: -.5px;
+}
+
+.logocontainer {
+  display: grid;
+  place-items: center right;
+}
+
+.logo {
+  width: 60px;
+  aspect-ratio: 1/1;
+  display: block;
+  position: relative;
+
+}
+
+.backgroundHeader {
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
+}

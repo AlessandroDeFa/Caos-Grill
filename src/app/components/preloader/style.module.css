@@ -1,0 +1,28 @@
+.preloader {
+  height: 100vh;
+  background-color: #373C40;
+  position: fixed;
+  z-index: 99999;
+  inset: 0;
+  cursor: wait;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloaderText {
+  display: flex;
+  gap: 0.4rem;
+  color: #FFFF;
+  font-size: clamp(.9rem, 4.5vw, 1.7rem);
+  font-weight: 300;
+  overflow: hidden;
+  text-transform: uppercase;
+
+}
+
+@media only screen and (min-width: 500px) {
+  .preloaderText {
+    gap: 0.8rem;
+  }
+}
