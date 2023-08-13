@@ -9,6 +9,8 @@ const cormorant = Cormorant({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Cao's Grill",
+  description:
+    "Benvenuti al Cao's Grill: Dove le grigliate succulente, le pizze artigianali, le prelibatezze di carne e i dolci irresistibili si fondono in un'esperienza culinaria unica. Scopri i sapori autentici e lasciati tentare dalla nostra passione per il cibo.",
   viewport: "width=device-width, initial-scale=1",
 };
 
