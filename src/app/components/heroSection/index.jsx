@@ -27,7 +27,7 @@ export default function Hero() {
           animate="enter"
           className={styles.heroText}
         >
-          <h1>CAO'S GRILL</h1>
+          <h1>CAO&apos;S GRILL</h1>
           <h2>PIZZERIA E GRIGLIERIA</h2>
           <h2>RISTORATORI DAL 1982</h2>
         </motion.div>

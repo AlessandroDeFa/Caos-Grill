@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.header}>
-        <div className={styles.logolabel}>CAO'S GRILL</div>
+        <div className={styles.logolabel}>CAO&apos;S GRILL</div>
         <div
           onClick={() => setActive(!isActive)}
           className={styles.triggerwrapper}

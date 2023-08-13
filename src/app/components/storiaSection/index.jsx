@@ -68,14 +68,14 @@ export default function StoriaSection() {
           </h2>
           <p>
             Il ristorante nasce nel 1982 dalla volontà di Onelia e Antonio di
-            unire lavoro e famiglia, cuore e fatica, e di avviare un'attività
-            familiare. Oggi, ad oltre 35 anni di distanza, siamo noi figli a
-            portare avanti la loro eredità: Maurizio, Denise e Mara con Paolo,
-            entrato del tutto nello spirito e nell'anima di questo locale.Nel
-            rispetto di quanto avviato dai nostri genitori, continuiamo a
-            lavorare con cura e professionalità, ma anche col sorriso e la
-            gentilezza, che contraddistinguono il nostro servizio e rendono
-            accogliente per tutti il nostro locale.
+            unire lavoro e famiglia, cuore e fatica, e di avviare
+            un&apos;attività familiare. Oggi, ad oltre 35 anni di distanza,
+            siamo noi figli a portare avanti la loro eredità: Maurizio, Denise e
+            Mara con Paolo, entrato del tutto nello spirito e nell&apos;anima di
+            questo locale.Nel rispetto di quanto avviato dai nostri genitori,
+            continuiamo a lavorare con cura e professionalità, ma anche col
+            sorriso e la gentilezza, che contraddistinguono il nostro servizio e
+            rendono accogliente per tutti il nostro locale.
           </p>
         </div>
       </div>
@@ -83,7 +83,8 @@ export default function StoriaSection() {
       <div className={styles.wrapperBottom}>
         <div className={styles.storiaPh}>
           <h2>
-            Un'esplosione di sapori che ti faranno viaggiare con ogni morso.
+            Un&apos;esplosione di sapori che ti faranno viaggiare con ogni
+            morso.
           </h2>
         </div>
         <div ref={imagesInView} className={styles.containerImages}>

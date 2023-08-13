@@ -118,8 +118,8 @@ export default function SpecialitaSection() {
       <div>
         <div className={styles.textBottom}>
           <p>
-            Presso di noi, ogni dettaglio culinario è parte di un'esperienza
-            completa.
+            Presso di noi, ogni dettaglio culinario è parte di
+            un&apos;esperienza completa.
           </p>
         </div>
         <div className={styles.containerBtn}>
