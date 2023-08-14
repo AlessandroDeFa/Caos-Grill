@@ -27,7 +27,6 @@ export default function Hero() {
             alt="image"
             fill={true}
             src={"/images/img-caosgrill.webp"}
-            objectFit="cover"
           />
         </motion.div>
         <motion.div
