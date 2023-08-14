@@ -22,7 +22,7 @@ export default function HeroComponent({ title, subtitle, src }) {
         }}
         className={styles.backgroundImg}
       >
-        <Image alt="image" fill={true} src={src} objectFit="cover" priority />
+        <Image alt="image" fill={true} src={src} priority loading="eager" />
       </motion.div>
 
       <motion.div

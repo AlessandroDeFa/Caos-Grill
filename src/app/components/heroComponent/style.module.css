@@ -24,6 +24,10 @@
   z-index: -1;
 }
 
+.backgroundImg img {
+  object-fit: cover;
+}
+
 .heroText {
   color: #F3F0EA;
   max-width: 1000px;
