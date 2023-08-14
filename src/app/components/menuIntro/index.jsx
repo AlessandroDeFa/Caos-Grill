@@ -95,11 +95,7 @@ export default function MenuIntro() {
             >
               <Link href={"/specialita"}>
                 {" "}
-                <Image
-                  fill={true}
-                  src={"/images/imagemenu3.webp"}
-                  alt="image"
-                />
+                <Image fill src={"/images/imagemenu3.webp"} alt="image" />
               </Link>
             </motion.div>
             <div className={styles.textCenter}>

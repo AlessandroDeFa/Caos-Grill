@@ -7,17 +7,21 @@
   align-items: center;
 }
 
-
 .backgroundImg {
-  height: 100%;
-  background-size: cover;
-  background-image: url(/images/img-caosgrill.webp);
-  background-repeat: no-repeat;
-  position: absolute;
   width: 100%;
-  background-position: bottom;
+  height: 100%;
+  position: absolute;
   z-index: -1;
-  transform: translate(0%, 0%);
+}
+
+.backgroundImg:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  display: block;
+  z-index: 1;
 }
 
 .heroText {
@@ -40,15 +44,7 @@
 }
 
 
-.backgroundImg:before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  height: 100%;
-  background: rgba(0, 0, 0, .4);
-  display: block;
 
-}
 
 .scrollIndicator {
   position: absolute;

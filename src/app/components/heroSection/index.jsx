@@ -2,6 +2,7 @@ import styles from "./style.module.css";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 import { opacityIndicator, translateHero } from "../preloader/anim";
+import Image from "next/image";
 
 export default function Hero() {
   const container = useRef(null);
@@ -20,7 +21,15 @@ export default function Hero() {
             y: y,
           }}
           className={styles.backgroundImg}
-        ></motion.div>
+        >
+          <Image
+            priority
+            alt="image"
+            fill={true}
+            src={"/images/img-caosgrill.webp"}
+            objectFit="cover"
+          />
+        </motion.div>
         <motion.div
           variants={translateHero}
           initial="initial"

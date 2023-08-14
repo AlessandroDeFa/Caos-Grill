@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { translateGlobalHero } from "../../utils/anim";
+import Image from "next/image";
 
 export default function HeroComponent({ title, subtitle, src }) {
   const container = useRef(null);
@@ -18,11 +19,12 @@ export default function HeroComponent({ title, subtitle, src }) {
       <motion.div
         style={{
           y: y,
-          backgroundImage: `url(${src})`,
         }}
-        id="bgImg"
         className={styles.backgroundImg}
-      ></motion.div>
+      >
+        <Image alt="image" fill={true} src={src} objectFit="cover" priority />
+      </motion.div>
+
       <motion.div
         variants={translateGlobalHero}
         initial="initial"
