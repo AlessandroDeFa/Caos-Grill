@@ -47,7 +47,7 @@ export default function ContactInfo() {
           }}
           className={styles.imgContact}
         >
-          <Image fill={true} alt="image" src={"/images/img-contatti1.jpeg"} />
+          <Image fill={true} alt="image" src={"/images/img-contatti1.webp"} />
         </motion.div>
       </div>
       <div className={styles.wrapper}>
@@ -57,7 +57,7 @@ export default function ContactInfo() {
           }}
           className={styles.imgContact2}
         >
-          <Image fill={true} alt="image" src={"/images/img-contatti2.jpeg"} />
+          <Image fill={true} alt="image" src={"/images/img-contatti2.webp"} />
         </motion.div>
 
         <div className={styles.wrapperBottomText}>

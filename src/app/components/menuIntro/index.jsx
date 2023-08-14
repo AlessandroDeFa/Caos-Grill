@@ -45,7 +45,7 @@ export default function MenuIntro() {
                   {" "}
                   <Image
                     fill={true}
-                    src={"/images/imagemenu1.jpg"}
+                    src={"/images/imagemenu1.webp"}
                     alt="image"
                   />
                 </Link>
@@ -70,7 +70,7 @@ export default function MenuIntro() {
                 <Link href={"/specialita"}>
                   <Image
                     fill={true}
-                    src={"/images/imagemenu2.jpg"}
+                    src={"/images/imagemenu2.webp"}
                     alt="image"
                   />
                 </Link>
@@ -95,7 +95,11 @@ export default function MenuIntro() {
             >
               <Link href={"/specialita"}>
                 {" "}
-                <Image fill={true} src={"/images/imagemenu3.jpg"} alt="image" />
+                <Image
+                  fill={true}
+                  src={"/images/imagemenu3.webp"}
+                  alt="image"
+                />
               </Link>
             </motion.div>
             <div className={styles.textCenter}>

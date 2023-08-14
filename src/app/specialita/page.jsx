@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export default function Specialita() {
   const title = "UNA SELEZIONE QUALITATIVA";
   const subtitle = "LA NOSTRA OFFERTA";
-  const src = "/images/img-specialita.jpg";
+  const src = "/images/img-specialita.webp";
 
   return (
     <main>

@@ -57,7 +57,7 @@ export default function StoriaSection() {
             }}
             className={styles.imgTop}
           >
-            <Image fill={true} alt="image" src={"/images/img-storiasec.jpeg"} />
+            <Image fill={true} alt="image" src={"/images/img-storiasec.webp"} />
           </motion.div>
         </div>
 
@@ -100,7 +100,7 @@ export default function StoriaSection() {
             <Image
               fill={true}
               alt="image"
-              src={"/images/img-storiasec2.jpeg"}
+              src={"/images/img-storiasec2.webp"}
             />
           </motion.div>
           <motion.div
@@ -115,7 +115,7 @@ export default function StoriaSection() {
             <Image
               fill={true}
               alt="image"
-              src={"/images/img-storiasec3.jpeg"}
+              src={"/images/img-storiasec3.webp"}
             />
           </motion.div>
         </div>

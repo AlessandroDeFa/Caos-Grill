@@ -70,7 +70,7 @@ export default function Introduction() {
             }}
             className={styles.imgIntro}
           >
-            <Image src={"/images/img-intro.jpeg"} fill={true} alt="image" />
+            <Image src={"/images/img-intro.webp"} fill={true} alt="image" />
           </motion.div>
         </div>
       </div>

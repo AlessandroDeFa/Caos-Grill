@@ -10,22 +10,22 @@ const links = [
   {
     title: "Home",
     href: "/",
-    srcImg: "img-storiasec.jpeg",
+    srcImg: "img-storiasec.webp",
   },
   {
     title: "Storia",
     href: "/storia",
-    srcImg: "storia-header.jpeg",
+    srcImg: "storia-header.webp",
   },
   {
     title: "Specialità",
     href: "/specialita",
-    srcImg: "specialita-header.jpg",
+    srcImg: "specialita-header.webp",
   },
   {
     title: "Contatti",
     href: "/contatti",
-    srcImg: "img-caosgrill2.jpeg",
+    srcImg: "img-caosgrill2.webp",
   },
 ];
 

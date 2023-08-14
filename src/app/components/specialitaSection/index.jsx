@@ -63,7 +63,7 @@ export default function SpecialitaSection() {
             <Image
               fill={true}
               alt="image"
-              src={"/images/img-specialita4.jpeg"}
+              src={"/images/img-specialita4.webp"}
             />
           </motion.div>
           <motion.div
@@ -75,7 +75,7 @@ export default function SpecialitaSection() {
             <Image
               fill={true}
               alt="image"
-              src={"/images/img-specialita5.jpeg"}
+              src={"/images/img-specialita5.webp"}
             />
           </motion.div>
         </div>
@@ -101,7 +101,7 @@ export default function SpecialitaSection() {
           animate={imagesIsInView ? "enter" : "exit"}
           className={styles.middleLeftImg}
         >
-          <Image fill={true} alt="image" src={"/images/img-specialita3.jpeg"} />
+          <Image fill={true} alt="image" src={"/images/img-specialita3.webp"} />
         </motion.div>
         <motion.div
           custom={0.4}
@@ -112,7 +112,7 @@ export default function SpecialitaSection() {
           }}
           className={styles.middleRightImg}
         >
-          <Image fill={true} alt="image" src={"/images/img-specialita2.jpg"} />
+          <Image fill={true} alt="image" src={"/images/img-specialita2.webp"} />
         </motion.div>
       </div>
       <div>
