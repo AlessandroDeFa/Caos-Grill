@@ -1,6 +1,8 @@
 .cursor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  display: none !important;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -17,13 +19,4 @@
   width: 20px;
   height: 20px;
   position: relative;
-}
-
-@media only screen and (min-width: 1000px) {
-  .cursor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
 }
