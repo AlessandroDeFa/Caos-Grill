@@ -6,12 +6,11 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 
 export default function Cursor() {
-  const isHover = useSelector((state) => state.cursorReducer.value.isHover);
-
-  const { x, y } = useMousePosition();
-  const size = isHover ? 100 : 10;
-
   if (typeof window !== "undefined" && window.innerWidth > 1000) {
+    const isHover = useSelector((state) => state.cursorReducer.value.isHover);
+
+    const { x, y } = useMousePosition();
+    const size = isHover ? 100 : 10;
     return (
       <motion.div
         animate={{

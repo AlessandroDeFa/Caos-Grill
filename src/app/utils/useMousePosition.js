@@ -5,6 +5,7 @@ export default function useMousePosition() {
 
   const updateMousePosition = (e) => {
     setmousePosition({ x: e.clientX, y: e.clientY });
+    console.log("render");
   };
 
   useEffect(() => {
