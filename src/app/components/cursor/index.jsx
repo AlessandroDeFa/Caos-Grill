@@ -8,8 +8,8 @@ import { useSelector } from "react-redux";
 export default function Cursor() {
   const isHover = useSelector((state) => state.cursorReducer.value.isHover);
   const size = isHover ? 100 : 10;
+  const { x, y } = useMousePosition();
   if (typeof window !== "undefined" && window.innerWidth > 1000) {
-    const { x, y } = useMousePosition();
     return (
       <motion.div
         animate={{
